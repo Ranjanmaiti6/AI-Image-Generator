@@ -36,7 +36,7 @@ const ImageGenerator = () => {
     };
 
   return (
-    <div className="container py-5">
+    <div className="container min-vh-100 d-flex flex-column py-4">
 
       {/* Heading */}
       <div className="text-center mb-5">
@@ -46,15 +46,16 @@ const ImageGenerator = () => {
       </div>
 
       {/* Image Card */}
-      <div className="card bg-dark border-0 shadow-lg mx-auto image-card">
-        <div className="card-body d-flex justify-content-center align-items-center p-4">
-          <img src={img_url==="/" ? defaultImage : img_url} alt="Default Image" className="img-fluid rounded"
-          />
-        </div>
-      </div>
+      <div className="d-flex justify-content-center align-items-center flex-grow-1">
+        <div className="card bg-dark border-0 shadow-lg image-card">
+          <div className="card-body d-flex justify-content-center align-items-center p-4">
+            <img src={img_url==="/" ? defaultImage : img_url} alt="Default Image" className="img-fluid rounded"
+            />
+          </div>
+      </div></div>
 
       {/* Search Bar */}
-      <div className="row justify-content-center mt-5">
+      <div className="row justify-content-center mt-auto pb-3">
         <div className="col-lg-10">
           <div className="input-group input-group-lg shadow">
             <input type="text" className="form-control" placeholder="Describe the image you want..." ref={inputRef}/>
