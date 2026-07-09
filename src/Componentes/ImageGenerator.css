@@ -1,11 +1,13 @@
 body{
-    background: linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    margin: 0;
     min-height: 100vh;
-    color: white;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .form-control{
-    background: #1f2937;
+    background: #3f4d60;
     border: none;
     color: white;
 }
@@ -35,7 +37,8 @@ body{
     max-width: 23.75rem; 
     border-radius: 1.25rem; 
     overflow: hidden;
-    background: #1e1e1e;
+    /* background: #b0aaaa; */
+    background-color: transparent;
     padding: 0.5rem; 
 }
 
@@ -46,3 +49,17 @@ body{
     border-radius: 0.9375rem; 
 }
 
+h1{
+    user-select: none;
+}
+
+.btn {
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(35, 37, 37);
+
+}
+span{
+    color: #4ef491;  
+}
