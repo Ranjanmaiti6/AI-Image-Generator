@@ -63,3 +63,11 @@ h1{
 span{
     color: #4ef491;  
 }
+footer{
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+footer small{
+    letter-spacing: 0.01rem;
+}
